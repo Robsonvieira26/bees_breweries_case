@@ -1,0 +1,8 @@
+*.pyc
+.vscode
+venv/
+terraform/*.tfvars
+terraform/.terraform/
+terraform/.terraform.lock.hcl
+data/
+logs/
