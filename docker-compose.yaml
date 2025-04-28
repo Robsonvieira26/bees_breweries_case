@@ -44,11 +44,6 @@ x-airflow-common:
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
 
-    AIRFLOW__SMTP__SMTP_HOST: ${SMTP_HOST}
-    AIRFLOW__SMTP__SMTP_USER: ${SMTP_USER}
-    AIRFLOW__SMTP__SMTP_PASSWORD: ${SMTP_PASSWORD}
-    AIRFLOW__SMTP__SMTP_PORT: ${SMTP_PORT}
-    AIRFLOW__SMTP__MAIL_FROM: ${SMTP_MAIL_FROM}
     AIRFLOW__WEBSERVER__EXPOSE_CONFIG: 'true'
     AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: 5
     AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL: 20
