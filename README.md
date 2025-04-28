@@ -7,7 +7,7 @@ Projeto de ingestão e orquestração de dados de breweries usando Airflow, MinI
 - Git  
 ## Como executar
 
-1. Clone o repositório e entre na pasta do projeto:
+Clone o repositório e entre na pasta do projeto:
    ```bash
    git clone https://github.com/Robsonvieira26/bees_breweries_case.git
    cd bees_breweries_case
