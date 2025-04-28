@@ -34,7 +34,7 @@ with DAG(
     schedule=[gold_brewery_ds],   
     start_date=datetime(2025, 4, 27),
     catchup=False,
-    tags=["fact","gold"],
+    tags=["gold","fact"],
 ) as dag:
     
     fact_breweries_snapshot = FactBreweriesSnapshotOperator(

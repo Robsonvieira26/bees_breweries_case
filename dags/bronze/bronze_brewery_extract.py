@@ -25,7 +25,7 @@ PER_PAGE = 200
         "retries": 1,
         "retry_delay": timedelta(minutes=1),
     },
-    tags=["example", "minio", "taskflow"],
+    tags=["bronze", "minio"],
 )
 def brewery_meta_to_minio():
 
