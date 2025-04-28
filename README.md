@@ -23,13 +23,30 @@ Configure suas credenciais editando o arquivo .env com os valores adequados:
     POSTGRES_DB=airflow
     MINIO_ROOT_USER=minioadmin
     MINIO_ROOT_PASSWORD=minioadmin
+    SMTP_HOST=smtp.gmail.com
+    SMTP_USER=mail@gmail.com
+    SMTP_PASSWORD=password_email
+    SMTP_PORT=587
+    MAIL_FROM=airflow_mail
   ```
+
 Torne o script executável e execute-o:
 
   ```bash
         chmod +x shellscripts/run.sh
         ./shellscripts/run.sh
 ```
+Configure suas do MinIO criando o arquivo ./terraform/terraform.tfvars :
+  ```terraform
+    minio_user = "minioadmin"
+    minio_password = "minioadmin"
+
+    buckets = [
+      "raw-data",
+      "processed-data",
+      "backup"
+    ]
+  ```
 
 Após alguns instantes, os serviços estarão disponíveis em:
 
